@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FAF7FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/imgTemperature"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_temperature"
+            android:contentDescription="@string/temperature_image"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#382554"
+            android:gravity="center"
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/editTextTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_hint"
+            android:inputType="numberDecimal|numberSigned"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:id="@+id/btnFtoC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fahrenheit_to_celsius"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnCtoF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/celsius_to_fahrenheit"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/result_placeholder"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#382554"
+            android:gravity="center"
+            android:layout_marginTop="30dp" />
+
+    </LinearLayout>
+</ScrollView>
